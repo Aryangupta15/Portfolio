@@ -516,9 +516,9 @@ header .heroImageContainer img {
 
 header .heroImageContainer img:hover{
   transition: 0.8s;
-  -webkit-box-shadow:24px 0 var(--main), 36px 0 var(--f);
-          box-shadow:24px 0 var(--main), 36px 0 var(--f);
-  border-radius: 12px solid var(--second);
+  -webkit-box-shadow:14px 0 var(--main), 28px 0 var(--f);
+          box-shadow:14px 0 var(--main), 28px 0 var(--f);
+  border: 12px solid var(--second);
 }
 
 header .heroDescription {
