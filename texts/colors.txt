@@ -1,0 +1,62 @@
+1.Main color
+
+:root{
+  --f: #4E31AA;
+  --main: #2F58CD;
+  --second: #7ed8ff;
+  --body-color: rgba(235, 235, 235, 0.565);
+}
+
+2.Black color
+
+:root{
+  --f: #000000;
+  --main: #494949;
+  --second: #969696;
+  --body-color: rgba(235, 235, 235, 0.565);
+}
+
+3.Blue color
+
+:root{
+  --f: #002B5B;
+  --main: #1A5F7A;
+  --second: #57C5B6;
+  --body-color: rgba(235, 235, 235, 0.565);
+}
+
+4.Voilet color
+
+:root{
+  --f: #645CBB;
+  --main: #A084DC;
+  --second: #BFACE2;
+  --body-color: rgba(235, 235, 235, 0.565);
+}
+
+5.Light Coffee color
+
+:root{
+  --f: #393646;
+  --main: #6D5D6E;
+  --second: #F4EEE0;
+  --body-color: rgba(235, 235, 235, 0.565);
+}
+
+6.Brown theme
+
+:root{
+  --f: #1A120B;
+  --main: #3C2A21;
+  --second: #E4C988;
+  --body-color: rgba(235, 235, 235, 0.565);
+}
+
+7.Local color
+
+:root{
+  --f: #161853;
+  --main: #292C6D;
+  --second: #EC255A;
+  --body-color: rgba(235, 235, 235, 0.565);
+}
