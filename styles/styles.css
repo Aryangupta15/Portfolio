@@ -517,6 +517,7 @@ header .heroImageContainer img {
 }
 
 header .heroImageContainer img:hover{
+  cursor: crosshair;
   transition: 0.8s;
   -webkit-box-shadow:14px 0 var(--main), 28px 0 var(--f);
           box-shadow:14px 0 var(--main), 28px 0 var(--f);
