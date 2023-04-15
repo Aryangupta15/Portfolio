@@ -770,6 +770,10 @@ header .heroDescription .socialsResume .resumeLink:focus {
   margin-top: 48px;
 }
 
+.color{
+  color: #02070e;
+}
+
 .contactTypes {
   display: -webkit-box;
   display: -ms-flexbox;
