@@ -16,13 +16,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   vertical-align: baseline;
 }
 
-*{
-  cursor: url(/Portfolio/assets/images/cursor.png)auto;
-}
-/* *{
-  cursor: none;
-}
-.cursor{
+/* .cursor{
   background-color: var(--main);
   height: 20px;
   width: 20px;

@@ -85,3 +85,10 @@ $(function() {
 //   document.querySelector('.cursor').style.left = `${x}px`;
 //   document.querySelector('.cursor').style.top = `${y}px`;
 // }
+
+Shery.mouseFollower({
+  //Parameters are optional.
+  skew: true,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  duration: 0,
+});
