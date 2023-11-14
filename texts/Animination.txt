@@ -78,6 +78,7 @@ zoom-out-down
 zoom-out-left
 zoom-out-right
                                                 :Anchor placements:
+                                                
 top-bottom
 top-center
 top-top
@@ -88,6 +89,7 @@ bottom-bottom
 bottom-center
 bottom-top
                                                 :Easing functions:
+
 linear
 ease
 ease-in
