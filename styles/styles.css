@@ -744,7 +744,7 @@ header .heroDescription .socialsResume .resumeLink:focus {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    cursor: none;
+  cursor: none;
 }
 
 .socialsList li a:focus {
@@ -1199,6 +1199,10 @@ footer p {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
+  .contactTypes {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .contactTypes .flexContainer .typeBox:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -1246,7 +1250,8 @@ footer p {
     column-gap: 15px;
   }
   .contactTypes {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .contactTypes .flexContainer {
     max-width: 100%;
@@ -1286,6 +1291,10 @@ footer p {
     justify-content: center;
     margin-left: 0;
     margin-top: 30px;
+  }
+  .contactTypes {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .contactFormContainer form input,
   .contactFormContainer form textarea {
