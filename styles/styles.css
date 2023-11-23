@@ -1,9 +1,10 @@
-:root {
-  --f: #000000;
-  --main: #494949;
-  --second: #969696;
+:root{
+  --f: #4E31AA;
+  --main: #2F58CD;
+  --second: #7ed8ff;
   --body-color: rgba(235, 235, 235, 0.565);
 }
+
 
 a,
 abbr,
@@ -1201,7 +1202,7 @@ footer p {
   }
   .contactTypes {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
   .contactTypes .flexContainer .typeBox:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
