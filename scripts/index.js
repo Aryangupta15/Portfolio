@@ -94,14 +94,13 @@ Shery.mouseFollower({
 });
 
 // changing theme to black.
-// var root = document.querySelector(":root");
-//   function change(){
-//     root.style.setProperty("--f","#000000");
-//     root.style.setProperty("--main","#494949");
-//     root.style.setProperty("--second","#969696");
-//     root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
-//   }
-//   ch
+var root = document.querySelector(":root");
+  function change(){
+    root.style.setProperty("--f","#000000");
+    root.style.setProperty("--main","#494949");
+    root.style.setProperty("--second","#969696");
+    root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
+  }
 //   function ch(){
 //     root.style.setProperty("--f","#4E31AA");
 //     root.style.setProperty("--main","#2F58CD");
