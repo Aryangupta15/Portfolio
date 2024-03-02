@@ -31,13 +31,7 @@
   </div>
 
   <aside class="sideMenu sideMenuShow" id="sideMenu">
-    <p class="logo" onclick="ch()">
-      <script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
-      <lord-icon src="https://cdn.lordicon.com/kthelypq.json" trigger="in" delay="1500" state="in-account"
-        colors="primary:#ffffff" style="width:85px;height:85px" data-aos="flip-up" data-aos-delay="500">
-      </lord-icon>
-    </p>
-
+    <p class="logo">AG</p>
     <nav>
       <ul class="navBar">
         <li class="homeNav">
@@ -82,10 +76,39 @@
   <!--Beginning of the wrapper -->
   <div class="outerWrapper">
     <div class="innerWrapper">
+
+      <!-- Theme switcher -->
+      <div role="radiogroup" class="theme-switcher" data-aos="fade" data-aos-delay="1000">
+        <button type="button" role="radio" data-theme-switcher="true" data-active="false" class="theme-switcher_switch"
+          aria-label="Switch to light theme" aria-checked="false" onclick="ChangeMain()">
+          <svg style="color: currentcolor; width: 16px; height: 16px;" width="24" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" shape-rendering="geometricPrecision"
+            height="24" fill="none" data-testid="geist-icon" class="icon">
+            <circle r="5" cy="12" cx="12"></circle>
+            <path d="M12 1v2"></path>
+            <path d="M12 21v2"></path>
+            <path d="M4.22 4.22l1.42 1.42"></path>
+            <path d="M18.36 18.36l1.42 1.42"></path>
+            <path d="M1 12h2"></path>
+            <path d="M21 12h2"></path>
+            <path d="M4.22 19.78l1.42-1.42"></path>
+            <path d="M18.36 5.64l1.42-1.42"></path>
+          </svg>
+        </button>
+        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
+          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeBlack()">
+          <svg style="color: currentcolor; width: 16px; height: 16px;" width="24" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" shape-rendering="geometricPrecision"
+            height="24" fill="none" data-testid="geist-icon" class="icon">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
       <!-- Header -->
       <header>
         <div class="heroImageContainer" data-aos="fade-up" data-aos-delay="300">
-          <img src="assets/images/Aryan.jpg" alt="A picture of Aryan." class="ProfileImg" onclick="change()">
+          <img src="assets/images/Aryan.jpg" alt="A picture of Aryan." class="ProfileImg">
         </div>
         <div class="heroDescription">
           <p class="greeting" data-aos="fade-up" data-aos-delay="500">HI THERE! I'M</p>
@@ -325,7 +348,9 @@
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">PicHunt</h3>
                 <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>,<span class="techStack">javascript</span>,<span class="techStack">Unsplash API</span>, <span class="techStack">Flowbite</span>,<span class="techStack">Firebase</span>.</h4>
+                    class="techStack">CSS</span>,<span class="techStack">javascript</span>,<span
+                    class="techStack">Unsplash API</span>, <span class="techStack">Flowbite</span>,<span
+                    class="techStack">Firebase</span>.</h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
                   <li>Developed a responsible website of an image search engine.</li>
                   <li>Generator images of the text using Unsplash API.</li>
