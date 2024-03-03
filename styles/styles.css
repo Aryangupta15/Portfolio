@@ -608,7 +608,7 @@ section {
   margin-top: 3vh;
   width: -moz-fit-content;
   width: fit-content;
-  display: flex;
+  display: ruby-text;
   border-radius: 9999px;
   border: 1px solid rgb(220, 220, 220);
   z-index: 99999999;
