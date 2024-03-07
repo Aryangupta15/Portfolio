@@ -157,10 +157,12 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
+  appearance: none;
   -moz-appearance: none;
 }
 
 input[type="search"] {
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -252,6 +254,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  appearance: none;
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -269,6 +272,7 @@ input[type="radio"] {
 }
 
 input[type="search"] {
+  appearance: none;
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
