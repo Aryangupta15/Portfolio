@@ -1230,6 +1230,7 @@ footer p {
   .socialsList {
     margin-left: 10px;
   }
+
 }
 
 /**********************/
@@ -1258,6 +1259,9 @@ footer p {
 /*   MAX WIDTH 767PX  */
 /**********************/
 @media (max-width: 767px) {
+  .theme-switcher{
+    display: none;
+  }
   .innerWrapper {
     padding: 0 15px;
   }
