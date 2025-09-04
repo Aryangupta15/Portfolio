@@ -95,15 +95,59 @@ $(function() {
 
 // changing theme to black.
 var root = document.querySelector(":root");
+
   function ChangeBlack(){
     root.style.setProperty("--f","#000000");
     root.style.setProperty("--main","#494949");
     root.style.setProperty("--second","#969696");
     root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
   }
-  function ChangeMain(){
+
+  function ChangeBlue(){
     root.style.setProperty("--f","#4E31AA");
     root.style.setProperty("--main","#2F58CD");
     root.style.setProperty("--second","#7ed8ff");
+    root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
+  }
+
+  function ChangeRed(){
+    root.style.setProperty("--f","#D21312");
+    root.style.setProperty("--main","#ED2B2A");
+    root.style.setProperty("--second","#ffa0a0ff");
+    root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
+  }
+
+  function ChangePurple(){
+    root.style.setProperty("--f","#2E073F");
+    root.style.setProperty("--main","#7A1CAC");
+    root.style.setProperty("--second","#F5C6A5");
+    root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
+  }
+
+  function ChangeYellow(){
+    root.style.setProperty("--f","#F98404");
+    root.style.setProperty("--main","#ffbb1bff");
+    root.style.setProperty("--second","#F98404");
+    root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
+  }
+
+  function ChangeGreen(){
+    root.style.setProperty("--f","#004030");
+    root.style.setProperty("--main","#4A9782");
+    root.style.setProperty("--second","#DCD0A8");
+    root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
+  }
+
+  function ChangeBrown(){
+    root.style.setProperty("--f","#604652");
+    root.style.setProperty("--main","#735557");
+    root.style.setProperty("--second","#97866A");
+    root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
+  }
+
+  function ChangeTeal(){
+    root.style.setProperty("--f","#00545bff");
+    root.style.setProperty("--main","#00a5a8ff");
+    root.style.setProperty("--second","#00e5ffff");
     root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
   }

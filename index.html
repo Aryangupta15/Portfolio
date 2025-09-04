@@ -80,28 +80,121 @@
       <!-- Theme switcher -->
       <div role="radiogroup" class="theme-switcher" data-aos="fade" data-aos-delay="1000">
         <button type="button" role="radio" data-theme-switcher="true" data-active="false" class="theme-switcher_switch"
-          aria-label="Switch to light theme" aria-checked="false" onclick="ChangeMain()">
-          <svg style="color: currentcolor; width: 16px; height: 16px;" width="24" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" shape-rendering="geometricPrecision"
-            height="24" fill="none" data-testid="geist-icon" class="icon">
-            <circle r="5" cy="12" cx="12"></circle>
-            <path d="M12 1v2"></path>
-            <path d="M12 21v2"></path>
-            <path d="M4.22 4.22l1.42 1.42"></path>
-            <path d="M18.36 18.36l1.42 1.42"></path>
-            <path d="M1 12h2"></path>
-            <path d="M21 12h2"></path>
-            <path d="M4.22 19.78l1.42-1.42"></path>
-            <path d="M18.36 5.64l1.42-1.42"></path>
-          </svg>
+          aria-label="Switch to light theme" aria-checked="false" onclick="ChangeBlue()">
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <!-- Drop shadow -->
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.4)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%230077ff' filter='url(%23shadow)'/>
+</svg>" alt="blue ball with shadow">
         </button>
+
+        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
+          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeRed()">
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.4)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%23e53935' filter='url(%23shadow)'/>
+</svg>" alt="red ball with shadow">
+        </button>
+
         <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
           aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeBlack()">
-          <svg style="color: currentcolor; width: 16px; height: 16px;" width="24" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" shape-rendering="geometricPrecision"
-            height="24" fill="none" data-testid="geist-icon" class="icon">
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-          </svg>
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <!-- Drop shadow -->
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.5)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%23000000' filter='url(%23shadow)'/>
+</svg>" alt="black ball with shadow">
+        </button>
+
+        </button>
+        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
+          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangePurple()">
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <!-- Drop shadow -->
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.4)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%239d4edd' filter='url(%23shadow)'/>
+</svg>" alt="purple ball with shadow">
+
+
+        </button>
+
+        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
+          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeYellow()">
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <!-- Drop shadow -->
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.4)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%23FFD700' filter='url(%23shadow)'/>
+</svg>" alt="yellow ball with shadow">
+        </button>
+
+        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
+          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeGreen()">
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <!-- Drop shadow -->
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.35)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%23006644' filter='url(%23shadow)'/>
+</svg>" alt="lighter green ball with shadow">
+
+        </button>
+
+        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
+          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeBrown()">
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <!-- Drop shadow -->
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.4)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%238B4513' filter='url(%23shadow)'/>
+</svg>" alt="brown ball with shadow">
+
+
+        </button>
+        </button>
+        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
+          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeTeal()">
+          <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
+  <defs>
+    <!-- Drop shadow -->
+    <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feDropShadow dx='2' dy='2' stdDeviation='2' flood-color='rgba(0,0,0,0.35)'/>
+    </filter>
+  </defs>
+  <circle cx='16' cy='16' r='8' fill='%2387CEEB' filter='url(%23shadow)'/>
+</svg>" alt="sky blue ball with shadow">
+
         </button>
       </div>
 
@@ -148,8 +241,8 @@
               </li>
 
               <li>
-                <a href="mailto:aryangupta.x01@gmail.com" rel="noopener noreferrer"><i
-                    class="iconify" data-icon="simple-icons:googlemessages"></i></a>
+                <a href="mailto:aryangupta.x01@gmail.com" rel="noopener noreferrer"><i class="iconify"
+                    data-icon="simple-icons:googlemessages"></i></a>
               </li>
             </ul>
           </div>
@@ -298,22 +391,30 @@
           </div>
 
           <div class="worksContainer sectionContainer">
-            
+
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
                 <img src="assets/images/whiteboard.png" alt="Stonk." class="ImgSection">
               </div>
               <div class="workDescribeContainer">
                 <h3 data-aos="fade" data-aos-delay="600">DrawX | Collaboration whiteboard</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">Reactjs</span>, <span class="techStack">NodeJs</span>, <span class="techStack">ExpressJS</span>, <span class="techStack">Socket.io</span>, <span class="techStack">Firebase</span></h4>
+                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">Reactjs</span>,
+                  <span class="techStack">NodeJs</span>, <span class="techStack">ExpressJS</span>, <span
+                    class="techStack">Socket.io</span>, <span class="techStack">Firebase</span>
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>Implemented custom drawing tools (pen, shapes, text, images, eraser, laser) with undo/redo and history management.</li>
-                  <li>Built a modular canvas engine with hooks for selection, Undo & Redo System, rendering, and cursor customization.</li>
-                  <li>Enabled real-time collaboration with WebSocket communication, live cursors, and participant tracking.</li>
+                  <li>Implemented custom drawing tools (pen, shapes, text, images, eraser, laser) with undo/redo and
+                    history management.</li>
+                  <li>Built a modular canvas engine with hooks for selection, Undo & Redo System, rendering, and cursor
+                    customization.</li>
+                  <li>Enabled real-time collaboration with WebSocket communication, live cursors, and participant
+                    tracking.</li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
-                  <a href="https://whiteboard-1kfc.onrender.com/" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
-                  <a href="https://github.com/Aryangupta15/Whiteboard" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                  <a href="https://whiteboard-1kfc.onrender.com/" class="liveLink" target="_blank"
+                    rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/Aryangupta15/Whiteboard" class="repoLink" target="_blank"
+                    rel="noopener noreferrer">Repo</a>
                 </div>
               </div>
             </article>
@@ -324,15 +425,23 @@
               </div>
               <div class="workDescribeContainer">
                 <h3 data-aos="fade" data-aos-delay="600">Tomato | Food delivery website</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">React</span>, <span class="techStack">MongoDB</span>, <span class="techStack">Express</span>, <span class="techStack">NodeJs</span>, <span class="techStack">Tailwind css</span>, <span class="techStack">Custom API</span>, <span class="techStack">Render</span>.</h4>
+                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">React</span>, <span
+                    class="techStack">MongoDB</span>, <span class="techStack">Express</span>, <span
+                    class="techStack">NodeJs</span>, <span class="techStack">Tailwind css</span>, <span
+                    class="techStack">Custom API</span>, <span class="techStack">Render</span>.</h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>This website allows users to browse a variety of food options, place orders, and track their delivery status.</li>
-                  <li>With Node.js and Render, this website can handle a large number of users and orders without compromising performance.</li>
-                  <li>This website is fully responsive, with ensuring a seamless experience across devices of all sizes.</li>
+                  <li>This website allows users to browse a variety of food options, place orders, and track their
+                    delivery status.</li>
+                  <li>With Node.js and Render, this website can handle a large number of users and orders without
+                    compromising performance.</li>
+                  <li>This website is fully responsive, with ensuring a seamless experience across devices of all sizes.
+                  </li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
-                  <a href="https://tomato-l8nf.onrender.com" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
-                  <a href="https://github.com/Aryangupta15/Tomato" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                  <a href="https://tomato-l8nf.onrender.com" class="liveLink" target="_blank"
+                    rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/Aryangupta15/Tomato" class="repoLink" target="_blank"
+                    rel="noopener noreferrer">Repo</a>
                 </div>
               </div>
             </article>
@@ -367,8 +476,8 @@
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">Detection Machine</h3>
                 <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">Reactjs</span>, <span class="techStack">Bootstrap</span>, <span
-                    class="techStack">Google Techable Machine</span>.</h4>
+                    class="techStack">CSS</span>, <span class="techStack">Reactjs</span>, <span
+                    class="techStack">Bootstrap</span>, <span class="techStack">Google Techable Machine</span>.</h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
                   <li>Developed a responsible website to detect live poses.</li>
                   <li>Integrated detection sections with Google Techable Machine.</li>
