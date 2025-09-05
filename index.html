@@ -714,6 +714,23 @@
       offset: 150,
       duration: 500,
     });
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const themeBtn = document.getElementById("theme-btn");
+  const themeOptions = document.querySelector(".theme-options");
+
+  themeBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    themeOptions.classList.toggle("show");
+  });
+
+  // close menu when clicking outside
+  document.addEventListener("click", () => {
+    themeOptions.classList.remove("show");
+  });
+});
+
   </script>
 </body>
 
