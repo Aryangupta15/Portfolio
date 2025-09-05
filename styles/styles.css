@@ -1370,6 +1370,12 @@ footer p {
     top: 60px;
     right: 30px;
   }
+
+  #theme-btn:focus + .theme-options,
+.theme-options:hover {
+  display: block;
+}
+
   .innerWrapper {
     padding: 0 15px;
   }
