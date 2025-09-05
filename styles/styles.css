@@ -1338,6 +1338,7 @@ footer p {
   .socialsList {
     margin-left: 10px;
   }
+
 }
 
 /**********************/
@@ -1360,6 +1361,16 @@ footer p {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
+
+    .theme-switcher{
+    top: 60px;
+    right: 60px;
+  }
+
+  #theme-btn:focus + .theme-options,
+.theme-options:hover {
+  display: block;
+}
 }
 
 /**********************/
