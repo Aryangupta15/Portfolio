@@ -1274,21 +1274,16 @@ footer p {
 
 /* scroll bar css end */
 
+/* @media screen and (max-width: 1493px){
+  
+} */
+
 /**********************/
 /*   MAX WIDTH 1040PX */
 /**********************/
-@media (max-width: 1040px) {
-  .contactFormContainer form {
-    -ms-grid-columns: (1fr) [1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .contactFormContainer form .subjectInput,
-  .contactFormContainer form .messageInput {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 /2;
-  }
-}
+/* @media (max-width: 1040px) {
+  
+} */
 
 /**********************/
 /*   MIN WIDTH 991PX  */
@@ -1304,28 +1299,6 @@ footer p {
     display: block;
   }
 
-    .dropdown-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 70px; /* adjust as needed */
-}
-
-.dropdown {
-  position: relative;
-  width: 48px;
-  font-size: 15px;
-  /* ✅ Add this for alignment */
-  margin: 0 20px;         /* centers horizontally */
-  display: flex;
-  justify-content: center;
-}
-
-}
-
-@media screen and (max-width: 1493px){
-  .theme-switcher {
-    display: none;
-  }
 }
 
 /**********************/
@@ -1365,9 +1338,6 @@ footer p {
   .socialsList {
     margin-left: 10px;
   }
-  .theme-switcher{
-    display: none;
-  }
 }
 
 /**********************/
@@ -1397,7 +1367,8 @@ footer p {
 /**********************/
 @media (max-width: 767px) {
   .theme-switcher{
-    display: none;
+    top: 60px;
+    right: 30px;
   }
   .innerWrapper {
     padding: 0 15px;
