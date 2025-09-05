@@ -702,7 +702,7 @@ section {
   margin-top: 3vh;
   width: -moz-fit-content;
   width: fit-content;
-  display: ruby-text;
+  display: inline-block;
   border-radius: 9999px;
   z-index: 99999999;
   margin-left: 73vw;
@@ -726,16 +726,37 @@ section {
   cursor: pointer;
 }
 
-.theme-switcher_switch:hover > .icon {
-  stroke: #000000;
+.theme-switcher_switch img{
+  height: 100%;
+  width: 100%;
 }
 
-.theme-switcher_switch:active {
-  background-color: rgba(128, 128, 128, 0.35);
+
+.theme-options {
+  display: none;
+  position: absolute;
+  top: 40px; /* below main button */
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: none;
+  cursor: pointer;
 }
 
-.theme-switcher_switch:focus > .icon {
-  stroke: rgb(0, 0, 0);
+.theme-btn-option {
+  display: block;
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+}
+/* Show dropdown on hover */
+#theme-btn:focus + .theme-options,
+.theme-options:hover {
+  display: block;
 }
 
 header {
@@ -1301,6 +1322,12 @@ footer p {
 
 }
 
+@media screen and (max-width: 1493px){
+  .theme-switcher {
+    display: none;
+  }
+}
+
 /**********************/
 /*   MAX WIDTH 900PX  */
 /**********************/
@@ -1337,6 +1364,9 @@ footer p {
   }
   .socialsList {
     margin-left: 10px;
+  }
+  .theme-switcher{
+    display: none;
   }
 }
 

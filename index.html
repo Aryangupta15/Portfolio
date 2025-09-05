@@ -78,10 +78,16 @@
     <div class="innerWrapper">
 
       <!-- Theme switcher -->
-      <div role="radiogroup" class="theme-switcher" data-aos="fade" data-aos-delay="1000">
-        <button type="button" role="radio" data-theme-switcher="true" data-active="false" class="theme-switcher_switch"
-          aria-label="Switch to light theme" aria-checked="false" onclick="ChangeBlue()">
-          <img src="data:image/svg+xml;utf8,
+<div role="radiogroup" class="theme-switcher" data-aos="fade" data-aos-delay="1000">
+  <!-- main button -->
+  <button type="button" id="theme-btn" class="theme-switcher_switch">
+    <img src="./assets/skills/color-pick.svg" alt="">
+  </button>
+
+  <!-- dropdown options -->
+  <div class="theme-options">
+    <button class="theme-btn-option" onclick="ChangeBlue()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -91,11 +97,10 @@
   </defs>
   <circle cx='16' cy='16' r='8' fill='%230077ff' filter='url(%23shadow)'/>
 </svg>" alt="blue ball with shadow">
-        </button>
 
-        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
-          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeRed()">
-          <img src="data:image/svg+xml;utf8,
+    </button>
+    <button class="theme-btn-option" onclick="ChangeRed()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
@@ -104,11 +109,10 @@
   </defs>
   <circle cx='16' cy='16' r='8' fill='%23e53935' filter='url(%23shadow)'/>
 </svg>" alt="red ball with shadow">
-        </button>
 
-        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
-          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeBlack()">
-          <img src="data:image/svg+xml;utf8,
+    </button>
+    <button class="theme-btn-option" onclick="ChangeBlack()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -118,12 +122,10 @@
   </defs>
   <circle cx='16' cy='16' r='8' fill='%23000000' filter='url(%23shadow)'/>
 </svg>" alt="black ball with shadow">
-        </button>
 
-        </button>
-        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
-          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangePurple()">
-          <img src="data:image/svg+xml;utf8,
+    </button>
+    <button class="theme-btn-option" onclick="ChangePurple()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -134,12 +136,9 @@
   <circle cx='16' cy='16' r='8' fill='%239d4edd' filter='url(%23shadow)'/>
 </svg>" alt="purple ball with shadow">
 
-
-        </button>
-
-        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
-          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeYellow()">
-          <img src="data:image/svg+xml;utf8,
+    </button>
+    <button class="theme-btn-option" onclick="ChangeYellow()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -149,11 +148,10 @@
   </defs>
   <circle cx='16' cy='16' r='8' fill='%23FFD700' filter='url(%23shadow)'/>
 </svg>" alt="yellow ball with shadow">
-        </button>
 
-        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
-          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeGreen()">
-          <img src="data:image/svg+xml;utf8,
+    </button>
+    <button class="theme-btn-option" onclick="ChangeGreen()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -164,11 +162,9 @@
   <circle cx='16' cy='16' r='8' fill='%23006644' filter='url(%23shadow)'/>
 </svg>" alt="lighter green ball with shadow">
 
-        </button>
-
-        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
-          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeBrown()">
-          <img src="data:image/svg+xml;utf8,
+    </button>
+    <button class="theme-btn-option" onclick="ChangeBrown()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -179,12 +175,9 @@
   <circle cx='16' cy='16' r='8' fill='%238B4513' filter='url(%23shadow)'/>
 </svg>" alt="brown ball with shadow">
 
-
-        </button>
-        </button>
-        <button type="button" role="radio" data-theme-switcher="true" data-active="true" class="theme-switcher_switch"
-          aria-label="Switch to dark theme" aria-checked="true" onclick="ChangeTeal()">
-          <img src="data:image/svg+xml;utf8,
+    </button>
+    <button class="theme-btn-option" onclick="ChangeTeal()">
+      <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -195,8 +188,10 @@
   <circle cx='16' cy='16' r='8' fill='%2387CEEB' filter='url(%23shadow)'/>
 </svg>" alt="sky blue ball with shadow">
 
-        </button>
-      </div>
+    </button>
+  </div>
+</div>
+
 
       <!-- Header -->
       <header>
@@ -211,7 +206,7 @@
             passionate about new technologies</p>
           <div class="socialsResume" data-aos="fade-up" data-aos-delay="500">
             <a class="resumeLink"
-              href="https://drive.google.com/file/d/1HLrYl9Ri42QVE3gAWiI_MYbwNZC4Etxx/view?usp=sharing" alt="link"
+              href="https://drive.google.com/file/d/1NTf27Hqe6jAgatRYaNRqHtgCaSD7_SgT/view?usp=sharing" alt="link"
               target="_blank" rel="noopener noreferrer">Resume</a>
             <ul class="socialsList">
               <li>
