@@ -151,3 +151,21 @@ var root = document.querySelector(":root");
     root.style.setProperty("--second","#00e5ffff");
     root.style.setProperty("--body-color","rgba(235, 235, 235, 0.565)");
   }
+
+
+//Theme togger for mobile devices
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const themeBtn = document.getElementById("theme-btn");
+  const themeOptions = document.querySelector(".theme-options");
+
+  themeBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    themeOptions.classList.toggle("show");
+  });
+
+  // close menu when clicking outside
+  document.addEventListener("click", () => {
+    themeOptions.classList.remove("show");
+  });
+});
