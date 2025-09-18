@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="icon" href="assets/images/portfolio.png">
+  <link rel="icon" href="assets/images/portfolio.png" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- <meta name="description"
     content="A Front End Web Developer and a Competitive Programmer passionate about creating interactive applications on the web and solve complex problem using the power of Data Structures and Algorithms." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap"
     rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 
@@ -24,7 +24,7 @@
 
   <!-- Mobile menu button -->
   <div id="home" class="visuallyHidden"></div>
-  <div class="menuButton" id="menuButton" tabindex=0>
+  <div class="menuButton" id="menuButton" tabindex="0">
     <div class="linesContainer">
       <span></span>
     </div>
@@ -76,18 +76,17 @@
   <!--Beginning of the wrapper -->
   <div class="outerWrapper">
     <div class="innerWrapper">
-
       <!-- Theme switcher -->
-<div role="radiogroup" class="theme-switcher" data-aos="fade" data-aos-delay="1000">
-  <!-- main button -->
-  <button type="button" id="theme-btn" class="theme-switcher_switch">
-    <img src="./assets/skills/color-pick.svg" alt="">
-  </button>
+      <div role="radiogroup" class="theme-switcher" data-aos="fade" data-aos-delay="1000">
+        <!-- main button -->
+        <button type="button" id="theme-btn" class="theme-switcher_switch">
+          <img src="./assets/skills/color-pick.svg" alt="" />
+        </button>
 
-  <!-- dropdown options -->
-  <div class="theme-options">
-    <button class="theme-btn-option" onclick="ChangeBlue()">
-      <img src="data:image/svg+xml;utf8,
+        <!-- dropdown options -->
+        <div class="theme-options">
+          <button class="theme-btn-option" onclick="ChangeBlue()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -96,11 +95,10 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%230077ff' filter='url(%23shadow)'/>
-</svg>" alt="blue ball with shadow">
-
-    </button>
-    <button class="theme-btn-option" onclick="ChangeRed()">
-      <img src="data:image/svg+xml;utf8,
+</svg>" alt="blue ball with shadow" />
+          </button>
+          <button class="theme-btn-option" onclick="ChangeRed()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <filter id='shadow' x='-50%' y='-50%' width='200%' height='200%'>
@@ -108,11 +106,10 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%23e53935' filter='url(%23shadow)'/>
-</svg>" alt="red ball with shadow">
-
-    </button>
-    <button class="theme-btn-option" onclick="ChangeBlack()">
-      <img src="data:image/svg+xml;utf8,
+</svg>" alt="red ball with shadow" />
+          </button>
+          <button class="theme-btn-option" onclick="ChangeBlack()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -121,11 +118,10 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%23000000' filter='url(%23shadow)'/>
-</svg>" alt="black ball with shadow">
-
-    </button>
-    <button class="theme-btn-option" onclick="ChangePurple()">
-      <img src="data:image/svg+xml;utf8,
+</svg>" alt="black ball with shadow" />
+          </button>
+          <button class="theme-btn-option" onclick="ChangePurple()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -134,11 +130,10 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%239d4edd' filter='url(%23shadow)'/>
-</svg>" alt="purple ball with shadow">
-
-    </button>
-    <button class="theme-btn-option" onclick="ChangeYellow()">
-      <img src="data:image/svg+xml;utf8,
+</svg>" alt="purple ball with shadow" />
+          </button>
+          <button class="theme-btn-option" onclick="ChangeYellow()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -147,11 +142,10 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%23FFD700' filter='url(%23shadow)'/>
-</svg>" alt="yellow ball with shadow">
-
-    </button>
-    <button class="theme-btn-option" onclick="ChangeGreen()">
-      <img src="data:image/svg+xml;utf8,
+</svg>" alt="yellow ball with shadow" />
+          </button>
+          <button class="theme-btn-option" onclick="ChangeGreen()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -160,11 +154,10 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%23006644' filter='url(%23shadow)'/>
-</svg>" alt="lighter green ball with shadow">
-
-    </button>
-    <button class="theme-btn-option" onclick="ChangeBrown()">
-      <img src="data:image/svg+xml;utf8,
+</svg>" alt="lighter green ball with shadow" />
+          </button>
+          <button class="theme-btn-option" onclick="ChangeBrown()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -173,11 +166,10 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%238B4513' filter='url(%23shadow)'/>
-</svg>" alt="brown ball with shadow">
-
-    </button>
-    <button class="theme-btn-option" onclick="ChangeTeal()">
-      <img src="data:image/svg+xml;utf8,
+</svg>" alt="brown ball with shadow" />
+          </button>
+          <button class="theme-btn-option" onclick="ChangeTeal()">
+            <img src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'>
   <defs>
     <!-- Drop shadow -->
@@ -186,24 +178,27 @@
     </filter>
   </defs>
   <circle cx='16' cy='16' r='8' fill='%2387CEEB' filter='url(%23shadow)'/>
-</svg>" alt="sky blue ball with shadow">
-
-    </button>
-  </div>
-</div>
-
+</svg>" alt="sky blue ball with shadow" />
+          </button>
+        </div>
+      </div>
 
       <!-- Header -->
       <header>
         <div class="heroImageContainer" data-aos="fade-up" data-aos-delay="300">
-          <img src="assets/images/Aryan.jpg" alt="A picture of Aryan." class="ProfileImg">
+          <img src="assets/images/Aryan.jpg" alt="A picture of Aryan." class="ProfileImg" />
         </div>
         <div class="heroDescription">
-          <p class="greeting" data-aos="fade-up" data-aos-delay="500">HI THERE! I'M</p>
-          <h1 data-aos="fade-up" data-aos-delay="700"><span>Aryan</span> Gupta</h1>
-          <p class="smallBio" data-aos="fade-up" data-aos-delay="900">A <span>Web Developer</span> and A <span>
-              Coder</span>
-            passionate about new technologies</p>
+          <p class="greeting" data-aos="fade-up" data-aos-delay="500">
+            HI THERE! I'M
+          </p>
+          <h1 data-aos="fade-up" data-aos-delay="700">
+            <span>Aryan</span> Gupta
+          </h1>
+          <p class="smallBio" data-aos="fade-up" data-aos-delay="900">
+            A <span>Web Developer</span> and A <span> Coder</span> passionate
+            about new technologies
+          </p>
           <div class="socialsResume" data-aos="fade-up" data-aos-delay="500">
             <a class="resumeLink"
               href="https://drive.google.com/file/d/1NTf27Hqe6jAgatRYaNRqHtgCaSD7_SgT/view?usp=sharing" alt="link"
@@ -253,7 +248,14 @@
           </div>
 
           <article class="aboutContainer sectionContainer" data-aos="fade-up" data-aos-delay="500">
-            <p>Hey Everyone!<br>Software engineer skilled in C++, React.js, and full-stack web development, with experience building AI-driven features and real-time backend systems using Node.js, Express.js, WebSockets, and Firebase. Proficient in modern frontend frameworks, database design, and end-to-end system architecture.</p>
+            <p>
+              Hey Everyone!<br />Software engineer skilled in C++, React.js,
+              and full-stack web development, with experience building
+              AI-driven features and real-time backend systems using Node.js,
+              Express.js, WebSockets, and Firebase. Proficient in modern
+              frontend frameworks, database design, and end-to-end system
+              architecture.
+            </p>
           </article>
         </section>
 
@@ -268,109 +270,115 @@
             <ul class="skillsGrid">
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="200">
-                  <img src="assets/skills/Cpp.svg">
+                  <img src="assets/skills/Cpp.svg" />
                   <p>C++</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="300">
-                  <img src="assets/skills/java.svg">
+                  <img src="assets/skills/java.svg" />
                   <p>JAVA</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="400">
-                  <img src="assets/skills/html.svg">
+                  <img src="assets/skills/html.svg" />
                   <p>HTML</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="500">
-                  <img src="assets/skills/css.svg">
+                  <img src="assets/skills/css.svg" />
                   <p>CSS</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="600">
-                  <img src="assets/skills/javascript.svg">
+                  <img src="assets/skills/javascript.svg" />
                   <p>Javascript</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="700">
-                  <img src="assets/skills/jquery.svg">
-                  <p>jQuery</p>
+                  <img src="assets/skills/docker.svg" />
+                  <p>Docker</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="800">
-                  <img src="assets/skills/firebase.svg">
-                  <p>Firebase</p>
+                  <img src="assets/skills/jquery.svg" />
+                  <p>jQuery</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="900">
-                  <img src="assets/skills/React.svg">
-                  <p>React</p>
+                  <img src="assets/skills/firebase.svg" />
+                  <p>Firebase</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="1000">
-                  <img src="assets/skills/bootstrap.svg">
-                  <p>Bootstrap</p>
+                  <img src="assets/skills/React.svg" />
+                  <p>React</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="1100">
-                  <img src="assets/skills/Tailwind.svg">
-                  <p>Tailwind</p>
+                  <img src="assets/skills/bootstrap.svg" />
+                  <p>Bootstrap</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="1200">
-                  <img src="assets/skills/xml.svg">
-                  <p>XML</p>
+                  <img src="assets/skills/Tailwind.svg" />
+                  <p>Tailwind</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="1300">
-                  <img src="assets/skills/mysql.svg">
-                  <p>MySQL</p>
+                  <img src="assets/skills/xml.svg" />
+                  <p>XML</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="1400">
-                  <img src="assets/skills/figma.svg">
-                  <p>Figma</p>
+                  <img src="assets/skills/mysql.svg" />
+                  <p>MySQL</p>
                 </div>
               </li>
               <li>
                 <div class="itemContainer" data-aos="fade-up" data-aos-delay="1500">
-                  <img src="assets/skills/xd.svg">
+                  <img src="assets/skills/figma.svg" />
+                  <p>Figma</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1600">
+                  <img src="assets/skills/xd.svg" />
                   <p>Adobe XD</p>
                 </div>
               </li>
               <li>
-                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1600">
-                  <img src="assets/skills/Canva.svg">
+                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1700">
+                  <img src="assets/skills/Canva.svg" />
                   <p>Canva</p>
                 </div>
               </li>
               <li>
-                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1700">
-                  <img src="assets/skills/github.svg">
+                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1800">
+                  <img src="assets/skills/github.svg" />
                   <p>GitHub</p>
                 </div>
               </li>
               <li>
-                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1800">
-                  <img src="assets/skills/vscode.svg">
+                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1900">
+                  <img src="assets/skills/vscode.svg" />
                   <p>VS Code</p>
                 </div>
               </li>
               <li>
-                <div class="itemContainer" data-aos="fade-up" data-aos-delay="1600">
-                  <img src="assets/skills/photoshop.svg">
+                <div class="itemContainer" data-aos="fade-up" data-aos-delay="2000">
+                  <img src="assets/skills/photoshop.svg" />
                   <p>Adobe PS</p>
                 </div>
               </li>
@@ -386,24 +394,35 @@
           </div>
 
           <div class="worksContainer sectionContainer">
-
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/whiteboard.png" alt="Stonk." class="ImgSection">
+                <img src="assets/images/whiteboard.png" alt="Stonk." class="ImgSection" />
               </div>
               <div class="workDescribeContainer">
-                <h3 data-aos="fade" data-aos-delay="600">DrawX | Collaboration whiteboard</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">Reactjs</span>,
-                  <span class="techStack">NodeJs</span>, <span class="techStack">ExpressJS</span>, <span
-                    class="techStack">Socket.io</span>, <span class="techStack">Firebase</span>
+                <h3 data-aos="fade" data-aos-delay="600">
+                  DrawX | Collaboration whiteboard
+                </h3>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">Reactjs</span>,
+                  <span class="techStack">NodeJs</span>,
+                  <span class="techStack">ExpressJS</span>,
+                  <span class="techStack">Socket.io</span>,
+                  <span class="techStack">Firebase</span>
                 </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>Implemented custom drawing tools (pen, shapes, text, images, eraser, laser) with undo/redo and
-                    history management.</li>
-                  <li>Built a modular canvas engine with hooks for selection, Undo & Redo System, rendering, and cursor
-                    customization.</li>
-                  <li>Enabled real-time collaboration with WebSocket communication, live cursors, and participant
-                    tracking.</li>
+                  <li>
+                    Implemented custom drawing tools (pen, shapes, text,
+                    images, eraser, laser) with undo/redo and history
+                    management.
+                  </li>
+                  <li>
+                    Built a modular canvas engine with hooks for selection,
+                    Undo & Redo System, rendering, and cursor customization.
+                  </li>
+                  <li>
+                    Enabled real-time collaboration with WebSocket
+                    communication, live cursors, and participant tracking.
+                  </li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
                   <a href="https://whiteboard-1kfc.onrender.com/" class="liveLink" target="_blank"
@@ -416,20 +435,68 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/Tomato.png" alt="Tomato | Food delivery website" class="ImgSection">
+                <img src="assets/images/DockerServer.png" alt="DockerServer" class="ImgSection" />
               </div>
               <div class="workDescribeContainer">
-                <h3 data-aos="fade" data-aos-delay="600">Tomato | Food delivery website</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">React</span>, <span
-                    class="techStack">MongoDB</span>, <span class="techStack">Express</span>, <span
-                    class="techStack">NodeJs</span>, <span class="techStack">Tailwind css</span>, <span
-                    class="techStack">Custom API</span>, <span class="techStack">Render</span>.</h4>
+                <h3 data-aos="fade" data-aos-delay="600">
+                  DockerServer | Static Site Hosting
+                </h3>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used:
+                  <span class="techStack">Node.js</span>,
+                  <span class="techStack">Express.js</span>,
+                  <span class="techStack">Docker</span>
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>This website allows users to browse a variety of food options, place orders, and track their
-                    delivery status.</li>
-                  <li>With Node.js and Render, this website can handle a large number of users and orders without
-                    compromising performance.</li>
-                  <li>This website is fully responsive, with ensuring a seamless experience across devices of all sizes.
+                  <li>
+                    Dockerized Node.js + Express static site server for easy deployment.
+                  </li>
+                  <li>
+                    Users can run the app without installing Node.js or dependencies locally.
+                  </li>
+                  <li>
+                    Easily serve static files in a container with simple port mapping.
+                  </li>
+                </ul>
+                <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
+                  <a href="https://hub.docker.com/r/aryanguptax/dockerserver" class="liveLink" target="_blank"
+                    rel="noopener noreferrer">Docker Hub</a>
+                  <a href="https://github.com/Aryangupta15/DockerServer" class="repoLink" target="_blank"
+                    rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/images/Tomato.png" alt="Tomato | Food delivery website" class="ImgSection" />
+              </div>
+              <div class="workDescribeContainer">
+                <h3 data-aos="fade" data-aos-delay="600">
+                  Tomato | Food delivery website
+                </h3>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">React</span>,
+                  <span class="techStack">MongoDB</span>,
+                  <span class="techStack">Express</span>,
+                  <span class="techStack">NodeJs</span>,
+                  <span class="techStack">Tailwind css</span>,
+                  <span class="techStack">Custom API</span>,
+                  <span class="techStack">Render</span>.
+                </h4>
+                <ul data-aos="fade-up" data-aos-delay="700">
+                  <li>
+                    This website allows users to browse a variety of food
+                    options, place orders, and track their delivery status.
+                  </li>
+                  <li>
+                    With Node.js and Render, this website can handle a large
+                    number of users and orders without compromising
+                    performance.
+                  </li>
+                  <li>
+                    This website is fully responsive, with ensuring a seamless
+                    experience across devices of all sizes.
                   </li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
@@ -442,16 +509,20 @@
             </article>
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/PicHunt.png" alt="Detection WebApp" class="ImgSection">
+                <img src="assets/images/PicHunt.png" alt="Detection WebApp" class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">PicHunt</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>,<span class="techStack">javascript</span>,<span
-                    class="techStack">Unsplash API</span>, <span class="techStack">Flowbite</span>,<span
-                    class="techStack">Firebase</span>.</h4>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,<span class="techStack">javascript</span>,<span
+                    class="techStack">Unsplash API</span>,
+                  <span class="techStack">Flowbite</span>,<span class="techStack">Firebase</span>.
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>Developed a responsible website of an image search engine.</li>
+                  <li>
+                    Developed a responsible website of an image search engine.
+                  </li>
                   <li>Generator images of the text using Unsplash API.</li>
                   <li>Simple and user friendly theme.</li>
                 </ul>
@@ -466,16 +537,27 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/Detection.png" alt="Detection WebApp" class="ImgSection">
+                <img src="assets/images/Detection.png" alt="Detection WebApp" class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
-                <h3 data-aos="fade" data-aos-delay="600">Detection Machine</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">Reactjs</span>, <span
-                    class="techStack">Bootstrap</span>, <span class="techStack">Google Techable Machine</span>.</h4>
+                <h3 data-aos="fade" data-aos-delay="600">
+                  Detection Machine
+                </h3>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,
+                  <span class="techStack">Reactjs</span>,
+                  <span class="techStack">Bootstrap</span>,
+                  <span class="techStack">Google Techable Machine</span>.
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>Developed a responsible website to detect live poses.</li>
-                  <li>Integrated detection sections with Google Techable Machine.</li>
+                  <li>
+                    Developed a responsible website to detect live poses.
+                  </li>
+                  <li>
+                    Integrated detection sections with Google Techable
+                    Machine.
+                  </li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
                   <a href="https://aryangupta15.github.io/Detection-webapp/" class="liveLink" target="_blank"
@@ -490,17 +572,26 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/weather.png" alt="Weather webApp." class="ImgSection">
+                <img src="assets/images/weather.png" alt="Weather webApp." class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">Weather WebApp</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">JS</span>, <span class="techStack">Weather
-                    API</span></h4>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,
+                  <span class="techStack">JS</span>,
+                  <span class="techStack">Weather API</span>
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>Developed a responsible website to get weather informations.</li>
+                  <li>
+                    Developed a responsible website to get weather
+                    informations.
+                  </li>
                   <li>Track weather details with the help of Rapid API</li>
-                  <li>Website shows details like Temperature,Humidity,Wind Speed,etc.</li>
+                  <li>
+                    Website shows details like Temperature,Humidity,Wind
+                    Speed,etc.
+                  </li>
                   <li>Simple light blue theme.</li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
@@ -514,16 +605,25 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/CodeEditor.png" alt="Live Code Editor." class="ImgSection">
+                <img src="assets/images/CodeEditor.png" alt="Live Code Editor." class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">Live Code Editor</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">JS</span>, <span
-                    class="techStack">Bootstrap</span>.</h4>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,
+                  <span class="techStack">JS</span>,
+                  <span class="techStack">Bootstrap</span>.
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>Code Editor Web App, Code editor is an optimized text editor that focuses on coding.</li>
-                  <li>It is a handy tool for development on Websites and WebApps.</li>
+                  <li>
+                    Code Editor Web App, Code editor is an optimized text
+                    editor that focuses on coding.
+                  </li>
+                  <li>
+                    It is a handy tool for development on Websites and
+                    WebApps.
+                  </li>
                   <li>Simple theme and Responsive for all devices.</li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
@@ -537,13 +637,16 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/TextToSpeech.png" alt="Text To Speech WebApp." class="ImgSection">
+                <img src="assets/images/TextToSpeech.png" alt="Text To Speech WebApp." class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">Text To Speech</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">JS</span>, <span
-                    class="techStack">Bootstrap</span>.</h4>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,
+                  <span class="techStack">JS</span>,
+                  <span class="techStack">Bootstrap</span>.
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
                   <li>Real Time Text To Speech Converter Web App.</li>
                   <li>It provides more than 15+ Language.</li>
@@ -560,12 +663,15 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/Tic-Tac-Toe.png" alt="Tic-Tac-toe game" class="ImgSection">
+                <img src="assets/images/Tic-Tac-Toe.png" alt="Tic-Tac-toe game" class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">Tic-Tac-Toe</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">JS</span></h4>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,
+                  <span class="techStack">JS</span>
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
                   <li>Tic-Tac-toe Game</li>
                   <li>Play with your friends and family.</li>
@@ -582,12 +688,15 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/Plant.png" alt="Buy Plants landing page." class="ImgSection">
+                <img src="assets/images/Plant.png" alt="Buy Plants landing page." class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">Plants Website</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">SASS</span>, <span class="techStack">JS</span>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,
+                  <span class="techStack">SASS</span>,
+                  <span class="techStack">JS</span>
                 </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
                   <li>Simple landing page</li>
@@ -605,15 +714,24 @@
 
             <article class="workBox">
               <div class="workImageContainer" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/linktree.png" alt="Linktree - ConnectMe." class="ImgSection">
+                <img src="assets/images/linktree.png" alt="Linktree - ConnectMe." class="ImgSection" />
               </div>
               <div class="workDescribeContainer" data-aos="fade-up" data-aos-delay="500">
                 <h3 data-aos="fade" data-aos-delay="600">Link tree</h3>
-                <h4 data-aos="fade" data-aos-delay="600">Technologies Used: <span class="techStack">HTML</span>, <span
-                    class="techStack">CSS</span>, <span class="techStack">JS</span>.</h4>
+                <h4 data-aos="fade" data-aos-delay="600">
+                  Technologies Used: <span class="techStack">HTML</span>,
+                  <span class="techStack">CSS</span>,
+                  <span class="techStack">JS</span>.
+                </h4>
                 <ul data-aos="fade-up" data-aos-delay="700">
-                  <li>Add all your social channels & update centrally, from your dashboard, anytime.</li>
-                  <li>It basically creates a simple landing page that hosts multiple links.</li>
+                  <li>
+                    Add all your social channels & update centrally, from your
+                    dashboard, anytime.
+                  </li>
+                  <li>
+                    It basically creates a simple landing page that hosts
+                    multiple links.
+                  </li>
                   <li>Simple and Blue theme.</li>
                 </ul>
                 <div class="workLinks" data-aos="fade-up" data-aos-delay="800">
@@ -624,7 +742,6 @@
                 </div>
               </div>
             </article>
-
           </div>
         </section>
 
@@ -641,7 +758,7 @@
               <div class="flexContainer" data-aos="fade-up" data-aos-delay="350">
                 <div class="typeBox">
                   <i class="" data-aos="fade-up" data-aos-delay="400"><img src="assets/images/mail.png"
-                      height="35px"></i>
+                      height="35px" /></i>
                   <a href="mailto:aryangupta.x01@gmail.com" data-aos="fade"
                     data-aos-delay="550">aryangupta.x01@gmail.com</a>
                   <a href="mailto:aryangupta.x01@gmail.com" data-aos="fade" data-aos-delay="650">
@@ -651,7 +768,7 @@
               </div>
               <div class="flexContainer" data-aos="fade-up" data-aos-delay="350">
                 <div class="typeBox">
-                  <i class="" data-aos="fade-up" data-aos-delay="400"><img src="assets/images/certificate.png"></i>
+                  <i class="" data-aos="fade-up" data-aos-delay="400"><img src="assets/images/certificate.png" /></i>
                   <a href="" target="_blank" rel="noopener noreferrer" data-aos="fade"
                     data-aos-delay="550">Credentials</a>
                   <a href="" target="_blank" rel="noopener noreferrer" data-aos="fade" data-aos-delay="650">
@@ -678,17 +795,18 @@
                   placeholder="Your Message*"></textarea>
               </form>
 
-              <button type="submit" class="formSend" target="_blank" form="contactForm"
-                rel="noopener noreferrer">SEND</button>
+              <button type="submit" class="formSend" target="_blank" form="contactForm" rel="noopener noreferrer">
+                SEND
+              </button>
             </div>
           </div>
-
         </section>
-      </main> <!-- End of Main -->
+      </main>
+      <!-- End of Main -->
     </div>
     <!-- Footer -->
     <footer>
-      <p>&copy; Aryan Gupta </p>
+      <p>&copy; Aryan Gupta</p>
     </footer>
     <!-- Icons provided by https://lineicons.com/ -->
   </div>
