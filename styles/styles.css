@@ -1253,6 +1253,14 @@ footer p {
   }
   .socialsList {
     margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialsResume{
+    display: flex;
+    flex-direction: column;
   }
 
 }
@@ -1370,6 +1378,7 @@ footer p {
   }
   header .heroDescription .socialsResume {
     display: block;
+    
   }
   header .heroImageContainer img {
     -webkit-box-shadow: 12px 0 #d9c8f1;

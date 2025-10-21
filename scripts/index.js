@@ -1,5 +1,3 @@
-const { jsx } = require("react/jsx-runtime");
-
 const index = {};
 
 index.$menu = $('#sideMenu');
