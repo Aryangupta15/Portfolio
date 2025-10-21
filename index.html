@@ -22,6 +22,10 @@
   <!-- 
 <div class="cursor"></div> -->
 
+<div class="preloader">
+    <span class="preloader-word">HELLO</span>
+  </div>
+
   <!-- Mobile menu button -->
   <div id="home" class="visuallyHidden"></div>
   <div class="menuButton" id="menuButton" tabindex="0">
@@ -74,7 +78,7 @@
   </aside>
 
   <!--Beginning of the wrapper -->
-  <div class="outerWrapper">
+  <div class="outerWrapper" id="main-content">
     <div class="innerWrapper">
       <!-- Theme switcher -->
       <div role="radiogroup" class="theme-switcher" data-aos="fade" data-aos-delay="1000">
@@ -809,12 +813,86 @@
       <p>&copy; Aryan Gupta</p>
     </footer>
     <!-- Icons provided by https://lineicons.com/ -->
+     <style>
+      .preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      transition: transform 1.2s cubic-bezier(0.77,0,0.175,1), opacity 0.6s ease;
+      overflow: hidden;
+    }
+    .preloader.hide {
+      transform: translateY(-120%);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .preloader-word {
+      font-size: 3rem;
+      color: #333;
+      letter-spacing: 0.4rem;
+      font-weight: 600;
+      opacity: 1;
+    }
+
+    #main-content {
+      opacity: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 1s ease 0.1s;
+    }
+    #main-content.active {
+      opacity: 1;
+    }
+     </style>
   </div>
   <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
     data-id="aryangupta01" data-description="Support me on Buy me a coffee!"
     data-message="Thank You so much for visit!!" data-color="#FF5F5F" data-position="Right" data-x_margin="18"
     data-y_margin="18"></script> -->
   <!-- End of the wrapper -->
+  <script>
+    const words = ["HELLO", "HOLA", "NAMASTE", "BONJOUR", "HALLO", "CIAO", "KONNICHIWA", "NǏ HǍO"];
+    const wordEl = document.querySelector('.preloader-word');
+    const preloader = document.querySelector('.preloader');
+    const mainContent = document.getElementById('main-content');
+    let idx = 0;
+
+    function showWord() {
+      wordEl.textContent = words[idx];
+      setTimeout(() => {
+        idx++;
+        if (idx < words.length) {
+          setTimeout(showWord, 200);
+        } else {
+          // all done → reveal
+          setTimeout(() => {
+            preloader.classList.add('hide');
+            setTimeout(() => {
+              preloader.style.display = 'none';
+              mainContent.classList.add('active');
+              document.body.style.overflow = 'auto';
+            }, 1200);
+          }, 400);
+        }
+      }, 100);
+    }
+
+    window.onload = () => {
+      document.body.style.overflow = 'hidden';
+      showWord();
+    };
+  </script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
