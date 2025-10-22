@@ -169,3 +169,32 @@ var root = document.querySelector(":root");
     themeOptions.classList.remove("show");
   });
 });
+
+const hellos = ["Hello", "Hola", "नमस्ते", "Bonjour", "안녕하세요", "Привет", "Olá", "வணக்கம்", "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", "ਸਤ ਸ੍ਰੀ ਅਕਾਲ"];
+const wordEl = document.querySelector('.preloader-word');
+const preloader = document.querySelector('.preloader');
+const main = document.getElementById('main-content');
+
+let i = 0;
+
+function showNextWord() {
+  wordEl.textContent = hellos[i];
+  i++;
+  if (i < hellos.length) {
+    setTimeout(showNextWord, 170);
+  } else {
+    setTimeout(() => {
+      preloader.classList.add('hide'); // curve slides up
+      setTimeout(() => {
+        preloader.style.display = 'none';
+        main.classList.add('active');
+        document.body.style.overflow = 'auto';
+      }, 1200);
+    }, 100);
+  }
+}
+
+window.onload = () => {
+  document.body.style.overflow = 'hidden';
+  showNextWord();
+};
