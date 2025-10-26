@@ -96,11 +96,6 @@ video {
   vertical-align: baseline;
 }
 
-.ProfileImg {
-  height: 100%;
-  width: 20%;
-}
-
 /* .cursor{
   background-color: var(--main);
   height: 20px;
@@ -321,7 +316,9 @@ textarea {
 img {
   vertical-align: middle;
 }
+
 .ImgSection {
+  padding: 2px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -707,12 +704,8 @@ header .heroImageContainer {
 header .heroImageContainer img {
   border-radius: 50%;
   margin: 0 auto;
-  width: 350px;
+  width: 400px;
   height: 400px;
-}
-
-header .heroImageContainer img:hover {
-  cursor: crosshair;
   transition: 0.8s;
   -webkit-box-shadow: 14px 0 var(--main), 28px 0 var(--f);
   box-shadow: 14px 0 var(--main), 28px 0 var(--f);
